@@ -1,0 +1,20 @@
+{
+    "id": "notebook",
+    "nome": "Notebook",
+    "preco": 12898.99,
+    "descricao": "Não se irrite por causa dos que vencem na vida, nem tenha inveja dos que conseguem realizar os seus planos de maldade. Tenha paciência, pois o SENHOR Deus cuidará disso.",
+    "estoque": 12,
+    "img": "./api/produtos/notebook/notebook-foto.jpg",
+    "avaliacoes": [
+        {
+            "nome": "Abraão",
+            "estrelas": 5,
+            "descricao": "Os que zombam de tudo põem uma cidade inteira em confusão, mas os sábios mantêm tudo em paz."
+        },
+        {
+            "nome": "Ester",
+            "estrelas": 4,
+            "descricao": "Procurei outras respostas, mas não encontrei nenhuma. Entre mil homens encontrei um que eu poderia respeitar, mas entre as mulheres não achei nem uma."
+        }
+    ]
+}

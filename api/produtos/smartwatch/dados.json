@@ -1,0 +1,20 @@
+{
+    "id": "smartwatch",
+    "nome": "Smartwatch",
+    "preco": 2249,
+    "descricao": "Sim, meus filhinhos, continuem unidos com Cristo, para que possamos estar cheios de coragem no dia em que ele vier. Assim não precisaremos ficar com vergonha e nos esconder dele naquele dia.",
+    "estoque": 8,
+    "img": "./api/produtos/smartwatch/smartwatch-foto.jpg",
+    "avaliacoes": [
+        {
+            "nome": "Tiago",
+            "estrelas": 1,
+            "descricao": "Portanto, nós, os cristãos, precisamos ajudar essas pessoas, pois assim poderemos tomar parte no seu trabalho de anunciar a verdade."
+        },
+        {
+            "nome": "HAbacuque",
+            "estrelas": 5,
+            "descricao": "Nada me alegra mais do que ouvir que os meus filhos vivem de acordo com a verdade"
+        }
+    ]
+}

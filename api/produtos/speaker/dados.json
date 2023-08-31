@@ -1,0 +1,20 @@
+{
+    "id": "speaker",
+    "nome": "Speaker",
+    "preco": 2390,
+    "descricao": "Portanto, quando eu chegar aí, vou chamar a atenção dele a respeito de tudo o que ele tem feito: as coisas horríveis que diz de nós e as mentiras que conta. Porém ele não fica satisfeito só em fazer isso; pois, quando os irmãos chegam aí, ele não os recebe. E, se alguma pessoa quer recebê-los, ele não deixa e até a expulsa da igreja!",
+    "estoque": 40,
+    "img": "./api/produtos/speaker/speaker-foto.jpg",
+    "avaliacoes": [
+        {
+            "nome": "Jaco",
+            "estrelas": 5,
+            "descricao": "Mas o dragão foi vencido, e por isso ele e os seus anjos não puderam mais ficar no céu."
+        },
+        {
+            "nome": "Josué",
+            "estrelas": 4,
+            "descricao": "Eu sou o Alfa e o Ômega, o Primeiro e o Último, o Princípio e o Fim."
+        }
+    ]
+}

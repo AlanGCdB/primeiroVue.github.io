@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="./vue.js"></script>
+  <title>Techno</title>
+</head>
+
+<body>
+
+  <div id="app">
+
+    <section class="modal" v-if="produto" @click="fecharModal">
+      <div class="modal_container">
+
+        <div class="modal_img">
+          <img :src="produto.img" :alt="produto.nome">
+        </div>
+
+        <div class="modal_dados">
+          <button @click="produto = false" class="modal_fechar" type="button">X</button>
+          <span class="modal_preco">{{produto.preco | numeroPreco}}</span>
+          <h2 class="modal_titulo">{{produto.nome}}</h2>
+          <p>{{produto.descricao}}</p>
+          <button class="modal_btn" type="button">Adicionar item</button>
+        </div>
+
+        <div class="avaliacoes">
+          <h2 class="avaliacao_subtitulo">Avaliacões</h2>
+          <ul>
+            <li v-for="(avaliacao) in produto.avaliacoes" class="avaliacao">
+              <p class="avaliacao_descricao">{{avaliacao.descricao}}</p>
+
+              <p class="avaliacao_usuario">{{avaliacao.nome}} | {{avaliacao.estrelas}} estrelas</p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="produtos">
+      <div v-for="item in produtos" @click="abriModal(item.id)" :key="item.id" class="produto">
+        <img :src="item.img" :alt="item.nome" class="produto_img">
+        <div class="produto_info">
+          <span class="produto_preco">{{item.preco | numeroPreco}}</span>
+          <h2 class="produto_titulo">{{item.nome}}</h2>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
