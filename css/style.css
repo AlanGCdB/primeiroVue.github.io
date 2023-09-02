@@ -9,6 +9,7 @@
 body {
     background: linear-gradient(to right, #1a1a1a 30%, #ffffff 30%);
     font-family: 'Noto Serif', serif;
+    background: #ccc;
 }
 
 #app {
