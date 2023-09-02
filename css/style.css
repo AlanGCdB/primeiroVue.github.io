@@ -7,9 +7,8 @@
 }
 
 body {
-    background: linear-gradient(to right, #1a1a1a 30%, #ffffff 30%);
+    background: linear-gradient(to right, #1a1a1a 30%, #cccccc 30%);
     font-family: 'Noto Serif', serif;
-    background: #ccc;
 }
 
 #app {
@@ -117,6 +116,21 @@ body {
         opacity: 1;
         transform: translate3d(0px, 0, 0);
     }
+}
+
+.carrinho_fechar,
+.modal_fechar {
+    border-radius: 50%;
+    border: 2px solid #000000;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 1rem;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, .2), 0px 4px 10px rgba(0, 0, 0, .3);
+    cursor: pointer;
+
 }
 
 .modal_fechar {
@@ -239,4 +253,84 @@ body {
     border: 2px solid #000000;
     text-shadow: 0px 3px 4px rgba(0, 0, 0, .2), 0px 4px 10px rgba(0, 0, 0, .3);
 
+}
+
+/* CARRINHO */
+.carrinho_modal::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+}
+
+.carrinho_modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: none;
+}
+
+.carrinho_modal.ativo {
+    display: block;
+}
+
+.carrinho_container {
+    position: relative;
+    margin: 80px auto;
+    background: #ffffff;
+    padding: 40px;
+    max-width: 800px;
+    animation: fadeInDown 1s forwards;
+}
+
+.carrinho_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding: 10px 0;
+}
+
+.carrinho_titulo {
+    margin-bottom: 30px;
+    border-bottom: 1px groove #000000;
+    width: 40%;
+}
+
+.carrinho_remover {
+    border: 1px groove rgba(0, 0, 0, 0.055);
+    border-left: none;
+    border-radius: 0px 10px 10px 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.carrinho_preco {
+    text-align: right;
+}
+
+.carrinho_total {
+    text-align: right;
+    padding: 10px 50px 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px groove #000000;
+}
+
+.carrinho_finalizar {
+    display: block;
+    margin-left: auto;
+    background: #000000;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 10px 25px;
+    border: none;
+    font-family: "noto Serif";
+    border-radius: 2px;
 }
