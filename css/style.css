@@ -60,6 +60,7 @@ body {
 
 .produto_img {
     max-width: 300px;
+    height: 150px;
     margin-right: 40px;
 }
 
@@ -69,7 +70,7 @@ body {
 }
 
 .produto_preco {
-    color: rgba(0, 0, 0, .5);
+    color: #706767;
 }
 
 /* MODAL  */
