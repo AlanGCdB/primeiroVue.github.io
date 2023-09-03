@@ -21,7 +21,6 @@
         {{carrinhoTotal | numeroPreco}} | {{carrinho.length}}
       </div>
     </header>
-
     <section class="produtos">
       <div v-for="item in produtos" @click="abriModal(item.id)" :key="item.id" class="produto">
         <img :src="item.img" :alt="item.nome" class="produto_img">
